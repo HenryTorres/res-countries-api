@@ -1,0 +1,32 @@
+nav {
+    border-top: 1px solid var(--very-dark-blue);
+    border-bottom: 1px solid var(--very-dark-blue);
+
+    height: 80px;
+    display: flex;
+
+    background-color: var(--navs);
+}
+
+.nav-content .theme {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-content .theme:hover {
+    cursor: pointer;
+}
+
+.nav-content {
+    width: 90%;
+    margin: 0px auto;
+    max-width: 1440px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 25px;
+}

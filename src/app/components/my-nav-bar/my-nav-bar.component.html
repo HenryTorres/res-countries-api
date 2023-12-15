@@ -1,0 +1,19 @@
+<nav>
+    <div class="nav-content">
+        <h1>Where in the world</h1>
+        <div class="theme" (click)="toggleTheme()">
+            @if (this.modeTheme == 'Light Mode') {
+            <span class="material-symbols-outlined">
+                light_mode
+            </span>
+            } @else {
+            <span class="material-symbols-outlined">
+                dark_mode
+            </span>
+            }
+            <span>
+                {{ this.modeTheme }}
+            </span>
+        </div>
+    </div>
+</nav>
