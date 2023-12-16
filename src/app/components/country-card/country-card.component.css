@@ -4,6 +4,7 @@
     border-radius: 5px;
     overflow: hidden;
     background-color: var(--navs);
+    box-shadow: 0 0 5px var(--shadow);
 
     display: flex;
     flex-direction: column;

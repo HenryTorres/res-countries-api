@@ -1,6 +1,6 @@
 .filter-content {
     border-radius: 5px;
-    width: 250px;
+    flex-basis: 250px;
 
     display: flex;
 }
@@ -12,10 +12,10 @@
     background-color: var(--navs);
     border: none;
     color: var(--texts);
-    /* box-shadow: 0 0 6px var(--shadow); */
+    box-shadow: 0px 0px 3px var(--shadow);
 }
 
 option {
-    padding: 1rem;
+    padding: 2rem;
     margin: 5px 0;
 }

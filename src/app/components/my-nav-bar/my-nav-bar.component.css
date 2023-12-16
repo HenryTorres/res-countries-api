@@ -2,7 +2,7 @@ nav {
     background-color: var(--navs);
     height: 80px;
     display: flex;
-    box-shadow: 0 0 6px var(--shadow);
+    box-shadow: 0 0 3px var(--shadow);
 }
 
 .nav-content {
@@ -25,6 +25,20 @@ nav {
 }
 
 
-nav h1 {
-    font-size: 25px;
+.nav-content h1 {
+    font-size: 1.3em;
+}
+
+.theme .mode-theme {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 540px) {
+    .nav-content h1 {
+        font-size: 1em;
+    }
+
+    .theme .mode-theme {
+        font-size: .8em;
+    }
 }

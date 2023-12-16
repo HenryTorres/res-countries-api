@@ -1,13 +1,54 @@
 .countries-content {
-    /* outline: 1px solid green; */
     margin: 2.5rem 0;
 }
 
 .countries-content .search-filter {
+    /* border: 1px solid red; */
     margin-bottom: 2.5rem;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.list-countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+country-card {
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .list-countries {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    country-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .countries-content .search-filter {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    country-search {
+        width: 100%;
+    }
+
+    country-filter {
+        width: 100%;
+    }
+
+    country-card {
+        margin-bottom: 1rem;
+    }
 }

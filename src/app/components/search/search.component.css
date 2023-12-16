@@ -2,17 +2,17 @@
     /* border: 1px solid blue; */
     border-radius: 5px;
     background-color: var(--navs);
-    width: 400px;
+    box-shadow: 0 0 3px var(--shadow);
+    padding-left: 2rem;
+    flex-basis: 400px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    padding-left: 2rem;
 }
 
-.search {
-    /* border: 1px solid green; */
+input.search {
     flex-grow: 1;
     padding: 1rem;
     border-radius: 5px;

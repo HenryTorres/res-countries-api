@@ -8,7 +8,9 @@
     --inputs: hsl(0, 0%, 52%);
     --background: hsl(0, 0%, 98%);
     --elements: hsl(0, 0%, 100%);
-    --shadow: rgba(104, 101, 101, 0.3);
+    --navs: hsl(0, 0%, 100%);
+    /* --shadow: rgba(36, 34, 34, 0.3); */
+    --shadow: hsl(209, 23%, 22%);
 
     --DarkBlue: hsl(209, 23%, 22%);
     --VeryDarkBlue: hsl(207, 26%, 17%);
