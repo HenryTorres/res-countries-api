@@ -1,0 +1,21 @@
+.filter-content {
+    border-radius: 5px;
+    width: 250px;
+
+    display: flex;
+}
+
+.filter-content select {
+    flex-grow: 1;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--navs);
+    border: none;
+    color: var(--texts);
+    /* box-shadow: 0 0 6px var(--shadow); */
+}
+
+option {
+    padding: 1rem;
+    margin: 5px 0;
+}

@@ -7,8 +7,8 @@
     --texts: hsl(200, 15%, 8%);
     --inputs: hsl(0, 0%, 52%);
     --background: hsl(0, 0%, 98%);
-
     --elements: hsl(0, 0%, 100%);
+    --shadow: rgba(104, 101, 101, 0.3);
 
     --DarkBlue: hsl(209, 23%, 22%);
     --VeryDarkBlue: hsl(207, 26%, 17%);

@@ -1,0 +1,13 @@
+.countries-content {
+    /* outline: 1px solid green; */
+    margin: 2.5rem 0;
+}
+
+.countries-content .search-filter {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

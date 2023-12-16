@@ -1,5 +1,9 @@
-<app-my-nav-bar (changeTheme)="onChangeTheme()" [modeTheme]="modeThemeText" />
-
 <div class="container">
-  <router-outlet />
+  <header>
+    <app-my-nav-bar (changeTheme)="onChangeTheme()" [modeTheme]="modeThemeText" />
+  </header>
+
+  <main>
+    <router-outlet />
+  </main>
 </div>

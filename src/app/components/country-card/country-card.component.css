@@ -1,0 +1,39 @@
+.card {
+    width: 250px;
+    height: 330px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--navs);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 250px;
+}
+
+.card .data {
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+
+.card .data h3 {
+    font-size: 1em;
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.card .data .detail {
+    /* outline: 1px solid yellow; */
+}
+
+.card .data .detail .item {
+    font-size: .75em;
+    margin: 4px 0;
+}
+
+.card .data .detail .item .subtitle {
+    font-weight: 600;
+}

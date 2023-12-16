@@ -1,20 +1,8 @@
 nav {
-    border-top: 1px solid var(--very-dark-blue);
-    border-bottom: 1px solid var(--very-dark-blue);
-
+    background-color: var(--navs);
     height: 80px;
     display: flex;
-
-    background-color: var(--navs);
-}
-
-.nav-content .theme {
-    display: flex;
-    gap: 10px;
-}
-
-.nav-content .theme:hover {
-    cursor: pointer;
+    box-shadow: 0 0 6px var(--shadow);
 }
 
 .nav-content {
@@ -26,6 +14,16 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+.nav-content .theme {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-content .theme:hover {
+    cursor: pointer;
+}
+
 
 nav h1 {
     font-size: 25px;

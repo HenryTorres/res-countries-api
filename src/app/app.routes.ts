@@ -3,6 +3,6 @@ import { CountriesPageComponent } from './pages/countries-page/countries-page.co
 import { CountryDetailPageComponent } from './pages/country-detail-page/country-detail-page.component';
 
 export const routes: Routes = [
-    { path: 'countries', component: CountriesPageComponent },
-    { path: 'detail', component: CountryDetailPageComponent }
+    { path: 'detail', component: CountryDetailPageComponent },
+    { path: '', component: CountriesPageComponent },
 ];
