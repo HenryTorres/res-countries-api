@@ -1,21 +1,12 @@
 <div class="countries-content">
     <div class="search-filter">
-        <country-search />
+        <country-search (onSearchCountry)="searchCountry($event)" />
         <country-filter />
     </div>
 
     <div class="list-countries">
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
-        <country-card />
+        @for (country of countries; track $index) {
+        <country-card [country]="country" />
+        }
     </div>
 </div>

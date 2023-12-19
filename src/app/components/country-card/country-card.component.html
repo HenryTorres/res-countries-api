@@ -1,16 +1,23 @@
 <div class="card">
-    <img src="https://i.pinimg.com/originals/d7/dc/b6/d7dcb663eb9bdc303168f78dc3f7ab7c.png" alt="bandera">
+    <img src="{{ country.flags.png }}" alt="bandera">
     <div class="data">
-        <h3 class="title">Perú</h3>
+        <h3 class="title">{{ country.name.common }}</h3>
         <div class="detail">
             <div class="item">
-                <span class="subtitle">Population: </span> <span>81777900</span>
+                <span class="subtitle">Population: </span>
+                <span>{{ country.population | number: '1.0-0' }}</span>
             </div>
             <div class="item">
-                <span class="subtitle">Region: </span> <span>Americas</span>
+                <span class="subtitle">Region: </span>
+                <span>{{ country.region }}</span>
             </div>
             <div class="item">
-                <span class="subtitle">Capital: </span> <span>Lima</span>
+                <span class="subtitle">Capital: </span>
+                <span>
+                    {{
+                    country.capital!=undefined ? country.capital[0]: ''
+                    }}
+                </span>
             </div>
         </div>
     </div>

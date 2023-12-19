@@ -2,5 +2,6 @@
     <span class="material-symbols-outlined">
         search
     </span>
-    <input type="text" class="search" placeholder="Search for a country...">
+    <input #inputSearch type="text" class="search" placeholder="Search for a country..."
+        (keyup.enter)="searchCountry(inputSearch.value)">
 </div>

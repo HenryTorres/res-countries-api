@@ -1,5 +1,5 @@
 .card {
-    width: 250px;
+    width: 270px;
     height: 330px;
     border-radius: 5px;
     overflow: hidden;
@@ -11,7 +11,8 @@
 }
 
 .card img {
-    width: 250px;
+    height: 160px;
+    box-shadow: 0 0 1px var(--shadow);
 }
 
 .card .data {
