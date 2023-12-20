@@ -55,4 +55,27 @@ export class CountriesService {
         })
       )
   }
+
+  getByRegion(region: string): Observable<ICountry[]> {
+    const endpoint: string = this.base_url + '/region/' + region;
+    return this.http.get<ICountry[]>(endpoint)
+      .pipe(
+        map(result => {
+          const countries: ICountry[] = [];
+          result.forEach(item => {
+            countries.push({
+              name: item.name,
+              population: item.population,
+              region: item.region,
+              capital: item.capital,
+              flags: item.flags
+            })
+          })
+          return countries;
+        }),
+        catchError(err => {
+          return of([]);
+        })
+      )
+  }
 }

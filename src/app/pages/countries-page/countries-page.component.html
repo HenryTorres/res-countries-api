@@ -1,7 +1,7 @@
 <div class="countries-content">
     <div class="search-filter">
         <country-search (onSearchCountry)="searchCountry($event)" />
-        <country-filter />
+        <country-filter (onFilterByRegion)="filterCountry($event)" />
     </div>
 
     <div class="list-countries">

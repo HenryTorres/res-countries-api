@@ -32,4 +32,12 @@ export class CountriesPageComponent implements OnInit {
       }
     })
   }
+
+  filterCountry(region: string) {
+    this.service.getByRegion(region).subscribe(
+      result => {
+        this.countries = result;
+      }
+    )
+  }
 }
