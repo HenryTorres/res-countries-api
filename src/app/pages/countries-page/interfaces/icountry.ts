@@ -3,5 +3,6 @@ export interface ICountry {
     population: string;
     region: string;
     capital: string[];
-    flags: { png: string, svg: string }
+    flags: { png: string, svg: string };
+    ccn3: string
 }

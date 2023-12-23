@@ -12,7 +12,7 @@ export class CountriesService {
   constructor(private readonly http: HttpClient) { }
 
   getAll(): Observable<ICountry[]> {
-    const endpoint: string = this.base_url + '/all';
+    const endpoint: string = this.base_url + '/all?limit=10';
     return this.http.get<ICountry[]>(endpoint)
       .pipe(
         map(results => {
@@ -23,7 +23,8 @@ export class CountriesService {
               population: item.population,
               region: item.region,
               capital: item.capital,
-              flags: item.flags
+              flags: item.flags,
+              ccn3: item.ccn3
             });
           })
           return countries;
@@ -45,7 +46,8 @@ export class CountriesService {
               population: item.population,
               region: item.region,
               capital: item.capital,
-              flags: item.flags
+              flags: item.flags,
+              ccn3: item.ccn3
             })
           })
           return countries;
@@ -68,7 +70,8 @@ export class CountriesService {
               population: item.population,
               region: item.region,
               capital: item.capital,
-              flags: item.flags
+              flags: item.flags,
+              ccn3: item.ccn3
             })
           })
           return countries;

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchComponent } from '../../components/search/search.component';
-import { FilterComponent } from '../../components/filter/filter.component';
-import { CountryCardComponent } from '../../components/country-card/country-card.component';
-import { CountriesService } from '../../services/countries.service';
-import { ICountry } from '../../interfaces/icountry';
+import { SearchComponent } from './components/search/search.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { CountryCardComponent } from './components/country-card/country-card.component';
+import { CountriesService } from './services/countries.service';
+import { ICountry } from './interfaces/icountry';
 
 @Component({
   selector: 'app-countries-page',

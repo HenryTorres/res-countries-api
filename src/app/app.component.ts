@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { MyNavBarComponent } from './components/my-nav-bar/my-nav-bar.component';
-import { ThemeService } from './services/theme.service';
-import { TypeTheme } from './interfaces/my-theme/itheme';
+import { MyNavBarComponent } from './shared/components/my-nav-bar/my-nav-bar.component';
+import { ThemeService } from './shared/services/theme.service';
+import { TypeTheme } from './shared/interfaces/my-theme/itheme';
 
 @Component({
   selector: 'app-root',

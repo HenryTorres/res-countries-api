@@ -1,0 +1,121 @@
+.back {
+    margin: 2.5rem 0;
+}
+
+.back:hover {
+    cursor: pointer;
+}
+
+.back button {
+    all: unset;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    font-size: .8em;
+    background-color: var(--navs);
+    color: var(--texts);
+    box-shadow: 0 0 3px var(--shadow);
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+}
+
+.info img {
+    max-width: 555px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.info .detail {
+    padding: 2rem 0;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info .detail .data .items {
+    margin-top: 1.5rem;
+    font-size: .8em;
+    display: flex;
+    gap: 10rem;
+    /* flex-wrap: wrap; */
+}
+
+.info .detail .data .items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info .detail .data .items ul li {
+    margin: 7px 0;
+}
+
+.info .detail .data .items ul li span.category {
+    font-weight: 700;
+}
+
+.info .detail .borders {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.info .detail .borders span {
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.info .detail .borders .links-borders {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info .detail .borders .links-borders a {
+    all: unset;
+    padding: .3rem 2rem;
+    font-size: .8em;
+    color: var(--texts);
+    background-color: var(--navs);
+    box-shadow: 0 0 3px var(--shadow);
+}
+
+.info .detail .borders .links-borders a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info .detail {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info .detail .data .items {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}

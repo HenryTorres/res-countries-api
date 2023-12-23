@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     gap: 10px;
     flex-wrap: wrap;
 }

@@ -1,1 +1,67 @@
-<p>country-detail-page works!</p>
+<div class="back">
+    <button type="button" (click)="onBack()">
+        <span class="material-symbols-outlined">
+            arrow_left_alt
+        </span>
+        <span>Back</span>
+    </button>
+</div>
+
+<section class="info">
+    <img src="{{ myCountry.flags.svg }}" alt="">
+    <div class="detail">
+        <div class="data">
+            <h2>{{ myCountry.name.common }}</h2>
+            <div class="items">
+                <div class="column1">
+                    <ul>
+                        <li>
+                            <span class="category">Native Name: </span>
+                            <span class="name">{{ myCountry.nativeName }}</span>
+                        </li>
+                        <li>
+                            <span class="category">Population: </span>
+                            <span class="name">{{ myCountry.population }}</span>
+                        </li>
+                        <li>
+                            <span class="category">Region: </span>
+                            <span class="name">{{ myCountry.region }}</span>
+                        </li>
+                        <li>
+                            <span class="category">Sub region: </span>
+                            <span class="name">{{ myCountry.subregion }}</span>
+                        </li>
+                        <li>
+                            <span class="category">Capital: </span>
+                            <span class="name">{{ myCountry.capital[0] }}</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <ul>
+                        <li>
+                            <span class="category">Top Level Domain: </span>
+                            <span class="name">{{ myCountry.tld }}</span>
+                        </li>
+                        <li>
+                            <span class="category">Currencies: </span>
+                            <span class="name">{{ myCountry.currencies }}</span>
+                        </li>
+                        <li>
+                            <span class="category">Languages: </span>
+                            <span class="name">{{ myCountry.languages }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="borders">
+            <span>Border Countries: </span>
+            <div class="links-borders">
+                @for (item of myCountry.borders; track $index) {
+                <a href="./detail/{{ item }}">{{ item }}</a>
+                }
+            </div>
+        </div>
+    </div>
+</section>

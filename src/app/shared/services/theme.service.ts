@@ -16,7 +16,7 @@ export class ThemeService {
   }
 
   getThemeLocalStorage(): string {
-    return localStorage.getItem('myTheme') || TypeTheme.dark;
+    return localStorage.getItem('myTheme') || TypeTheme.light;
   }
 
   setThemeLocalStorage(value: string) {
@@ -24,8 +24,6 @@ export class ThemeService {
   }
 
   setTheme(name: string): void {
-    console.log('Tema seleccionado: ' + name);
-
     localStorage.setItem('myTheme', name);
 
     const theme: IThemeProperties = (THEMES as any)[name];
