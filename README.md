@@ -6,6 +6,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -24,10 +25,13 @@ Users should be able to:
 - Click through to the border countries on the detail page
 - Toggle the color scheme between light and dark mode *(optional)*
 
+### Screenshot
+![image](https://github.com/HenryTorres/res-countries-api/assets/15697457/9a417210-ad69-4ea9-b671-5b036a063230)
+
 ### Links
 
 - [Solution URL](https://github.com/HenryTorres/res-countries-api)
-- [Live site URL here](https://res-countries-api-phi.vercel.app/)
+- [Live site URL here](https://todo-app-liart-tau.vercel.app)
 
 ## My process
 
